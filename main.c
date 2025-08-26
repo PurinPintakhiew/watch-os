@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(void) {
-    time_t seconds;
+int main ()
+{
+  time_t rawtime;
+  struct tm * timeinfo;
 
-    printf("Watch OS\n");
-    return 0;
+  time ( &rawtime );
+  timeinfo = localtime ( &rawtime );
+  printf ( "%s", asctime (timeinfo));
+  
+  return 0;
 }
