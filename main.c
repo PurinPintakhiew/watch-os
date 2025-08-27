@@ -5,6 +5,7 @@ int main ()
 {
   time_t rawtime;
   struct tm * timeinfo;
+  int year, month, day;
 
   time ( &rawtime );
   timeinfo = localtime ( &rawtime );
