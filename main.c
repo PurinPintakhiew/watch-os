@@ -4,8 +4,6 @@
 
 int main ()
 {
-  int year, month, day;
-
   while(1) {
     time_t rawtime;
     struct tm * timeinfo;
